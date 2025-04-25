@@ -6,11 +6,90 @@
   <title>Zain Waseem - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .profile-pic img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      background-color: #1565c0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 0;
+      display: inline-block;
+    }
+    section {
+      margin: 40px 0;
+    }
+    h2 {
+      color: #0d47a1;
+    }
+    .resume-box, .youtube-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .resume-button {
+      background-color: #0d47a1;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .project p, .resume-box p, .youtube-box p {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .youtube-box iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <!-- Profile Picture -->
       <div class="profile-pic">
         <img src="pfp.png" alt="Zain Waseem">
       </div>
@@ -18,15 +97,16 @@
       <p>Computer Science Student | University of Houston</p>
     </div>
   </header>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CXMSDJYHXD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CXMSDJYHXD');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXMSDJYHXD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CXMSDJYHXD');
+  </script>
+
   <nav>
     <div class="container">
       <ul>
@@ -43,14 +123,15 @@
     <h2>About Me</h2>
     <p>Hello! I'm Zain Waseem, a Computer Science student at the University of Houston. Graduation Date: 2026</p>
   </section>
+
   <section id="skills" class="container">
     <h2>Skills</h2>
-<ul><div>Programming Languages: Python, Java, JavaScript, C++</div>
-    <div>Web Development: HTML, CSS, React, Node.js</div>
-      <div>Tools: GitHub, Git, VSC, Eclipse, AWS, Visual Studio, Jcreator</div>
-          <div>Frameworks: React, Bootstrap, NodeJs, ExpressJs, NextJs</div></ul>
-      
-
+    <ul>
+      <li>Programming Languages: Python, Java, JavaScript, C++</li>
+      <li>Web Development: HTML, CSS, React, Node.js</li>
+      <li>Tools: GitHub, Git, VSC, Eclipse, AWS, Visual Studio, Jcreator</li>
+      <li>Frameworks: React, Bootstrap, NodeJs, ExpressJs, NextJs</li>
+    </ul>
   </section>
 
   <section id="projects" class="container">
@@ -58,6 +139,11 @@
     <div class="project">
       <h3>Dictionary Web App</h3>
       <p>Developed a responsive web application using HTML, CSS, and JavaScript to help users find word meanings and synonyms. Integrated the Oxford Dictionary API for accurate results.</p>
+    </div>
+    <div class="youtube-box">
+      <h3>🚀 Project Walkthrough</h3>
+      <p>Explore features like Office365 SSO, RBAC, User Management, and PDF Workflow:</p>
+      <iframe src="https://www.youtube.com/embed/oq4F17P8H2w" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -71,11 +157,10 @@
 
   <section id="contact" class="container">
     <h2>Contact</h2>
-      <p>Email: <a href="mailto:zmwaseem@cougarnet.uh.edu">zmwaseem@cougarnet.uh.edu</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/zain-waseem" target="_blank">linkedin.com/in/zain-waseem</a></p>
-      <p>GitHub: <a href="https://github.com/zain-waseem" target="_blank">github.com/zain-waseem</a></p>
-      <p>UH:<a href="https://cs.uh.edu">cs.uh.edu</a>
-       </p>
+    <p>Email: <a href="mailto:zmwaseem@cougarnet.uh.edu">zmwaseem@cougarnet.uh.edu</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/zain-waseem" target="_blank">linkedin.com/in/zain-waseem</a></p>
+    <p>GitHub: <a href="https://github.com/zain-waseem" target="_blank">github.com/zain-waseem</a></p>
+    <p>UH: <a href="https://cs.uh.edu">cs.uh.edu</a></p>
   </section>
 
   <footer>
